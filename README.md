@@ -18,3 +18,7 @@ from https://cloud.google.com/functions/docs/bestpractices/tips
 ## 4. Lazy initialization of global variables
     Dir tips/lazy.js
 from https://cloud.google.com/functions/docs/bestpractices/tip
+
+## 5. Sendgrid Node app with Google Clouse - practicing gcloud cli
+    server.js, Dir views
+from https://cloud.google.com/community/tutorials/send-email-with-sendgrid-and-nodejs-on-google-app-engine
