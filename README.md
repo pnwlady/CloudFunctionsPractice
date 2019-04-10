@@ -17,4 +17,4 @@ from https://cloud.google.com/functions/docs/bestpractices/tips
 
 ## 4. Lazy initialization of global variables
     Dir tips/lazy.js
-from https://cloud.google.com/functions/docs/bestpractices/tips
+from https://cloud.google.com/functions/docs/bestpractices/tip
