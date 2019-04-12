@@ -22,6 +22,21 @@ export const getBostonAreaWeather = functions.https.onRequest((request, response
             return Promise.all(promises)
         }
     })
+    // since prior promise was fulfilled, we want to manupulate the response data 
+    .then(citySnapshots => {
+        const results = []
+        // array of snapshots from the get
+        citySnapshots.forEach(citySnap => {
+            // iterate over each snaphot to capture each cities data 
+            const data = citySnap.data()
+            // getting each id
+            data.city = citySnap.id
+            // store data in results array
+            results.push(data)
+        })
+        // send response data to client
+        response.send(results)
+    })
     // handle if promse is rejected with an error
     .catch(error => {
         console.log(error)
