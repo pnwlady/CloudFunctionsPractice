@@ -28,9 +28,14 @@ from https://cloud.google.com/community/tutorials/send-email-with-sendgrid-and-n
     (Only capturing the code, not set up to compile)
 1.  Promises with HTTP Triggers in the cloud
     Calling to a firestore app to get weather data, handling the response, sending it to the client in json, error handling
-    https://www.youtube.com/watch?v=7IkUgCLr5oA
+    * .send()
+    * https://www.youtube.com/watch?v=7IkUgCLr5oA
 2. Promises with a Firestore Trigger in Cloud Functions
     Fuction to respond to updates to firebase document and send message with Firebase Cloud Messaging
-     * .onUpdate() - firestore trigger with 2 properties (before and after)
-     * after capture/track changes to data after update
-    https://www.youtube.com/watch?v=652XeeKNHSk
+    * .onUpdate() - firestore trigger with 2 properties (before and after)
+    * after capture/track changes to data after update
+    * https://www.youtube.com/watch?v=652XeeKNHSk
+3.  Promises for sequential and parallel work in Cloud Functions
+    Handling multiple get requests and their promises, then doing something with results
+    * Promise.all()
+    * https://www.youtube.com/watch?v=d9GrysWH1Lc
