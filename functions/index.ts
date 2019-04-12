@@ -10,13 +10,17 @@ export const getBostonAreaWeather = functions.https.onRequest((request, response
     .then(areaSnapshot => {
          // Convert to JavaScript Object and access the document property called cities for cities ID
         const cities = areaSnapshot.data().cities
+        // array to capture all promises 
+        const promises = []
         // build array to reference every city's doc
         for (const city in cities) {
             // each get returns a promise so there will be multiple replies
-            admin.firestore().doc(`cities-weather/${city}`).get()
+            const p = admin.firestore().doc(`cities-weather/${city}`).get()
+            // collect pending promises
+            promises.push(p)
+            // Returns after all the promises are fulfilled (completes then)
+            return Promise.all(promises)
         }
-        // send response to client in json format
-        response.send(data)
     })
     // handle if promse is rejected with an error
     .catch(error => {
