@@ -4,8 +4,8 @@
   "description": "Learning Cloud Functions in NodeJS",
   "main": "index.js",
   "scripts": {
-    "main": "functions/cloudFuncs.js",
-    "dev": "nodemon --inspect simpleServer.js",
+    "dev": "nodemon --inspect index.js",
+    "deploy-cf": "firebase deploy --only functions",
     "tunnel": "ngrok http 8080",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,15 +21,11 @@
   "homepage": "https://github.com/pnwlady/CloudFunctionsPractice#readme",
   "engines": { "node": "8" },
   "dependencies": {
-    "@sendgrid/mail": "^6.3.1",
     "actions-on-google": "^2.6.0",
-    "body-parser": "^1.18.3",
     "dialogflow-fulfillment": "^0.6.1",
     "express": "^4.16.4",
     "firebase-admin": "^7.2.0",
-    "firebase-functions": "^2.2.1",
-    "pug": "^2.0.3",
-    "sendgrid": "^5.2.3"
+    "firebase-functions": "^2.2.1"
   },
   "devDependencies": {
     "ngrok": "^3.1.1",
