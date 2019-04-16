@@ -4,6 +4,7 @@
   "description": "Learning Cloud Functions in NodeJS",
   "main": "index.js",
   "scripts": {
+    "tunnel": "ngrok http 8080",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,8 +20,12 @@
   "dependencies": {
     "@sendgrid/mail": "^6.3.1",
     "body-parser": "^1.18.3",
+    "dialogflow-fulfillment": "^0.6.1",
     "express": "^4.16.4",
     "pug": "^2.0.3",
     "sendgrid": "^5.2.3"
+  },
+  "devDependencies": {
+    "ngrok": "^3.1.1"
   }
 }
