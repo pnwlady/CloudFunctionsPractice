@@ -4,6 +4,7 @@
   "description": "Learning Cloud Functions in NodeJS",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon --inspect simpleServer.js",
     "tunnel": "ngrok http 8080",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,6 +28,7 @@
     "sendgrid": "^5.2.3"
   },
   "devDependencies": {
-    "ngrok": "^3.1.1"
+    "ngrok": "^3.1.1",
+    "nodemon": "^1.18.11"
   }
 }
