@@ -22,6 +22,7 @@ from https://cloud.google.com/functions/docs/bestpractices/tip
 ## 5. Sendgrid Node app with Google Cloud CLI - practicing gcloud cli
     server.js, Dir views
 from https://cloud.google.com/community/tutorials/send-email-with-sendgrid-and-nodejs-on-google-app-engine
+And https://cloud.google.com/functions/docs/quickstart
 
 ## 6 Promises examples in Typescript
     functions/index.ts
