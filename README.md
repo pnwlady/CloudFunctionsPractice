@@ -47,4 +47,5 @@ And https://cloud.google.com/functions/docs/quickstart
 * run 'npm run dev' in 1st terminal window to start server locally (it will update on change)    
 * run 'npm run tunnel' in 2nd terminal window to generate a public web server (url changes each use)
 * add ngrok's generated url + /dialogflow to the web hook URL line, save and test
+* deploy functions to clouse with shortcut 'npm run deploy-cf'
 * https://medium.com/@antonyharfield/dialogflow-web-hooks-how-to-develop-locally-and-deploy-to-cloud-functions-48839919e998
