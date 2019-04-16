@@ -40,3 +40,8 @@ And https://cloud.google.com/functions/docs/quickstart
     Handling multiple get requests and their promises, then doing something with results
     * Promise.all()
     * https://www.youtube.com/watch?v=d9GrysWH1Lc
+
+## 7 Dialogflow Webhooks - develop and deploy locally 
+    * simpleServer.js file
+    * using ngrok, express, dialogflow-fulfillment, gcloud CLI
+    * https://medium.com/@antonyharfield/dialogflow-web-hooks-how-to-develop-locally-and-deploy-to-cloud-functions-48839919e998
