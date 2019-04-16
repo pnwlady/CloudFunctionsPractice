@@ -43,5 +43,8 @@ And https://cloud.google.com/functions/docs/quickstart
 
 ## 7 Dialogflow Webhooks - develop and deploy locally 
     * simpleServer.js file
-    * using ngrok, express, dialogflow-fulfillment, gcloud CLI
+    * using ngrok, express, actions-on-google, dialogflow-fulfillment, gcloud CLI
+    * run node simpleServer.js in one terminal window server locally    
+    * run npm run tunnel in another terminal window to generate a public web server
+    * add ngrok's generated url + /dialogflow to the web hook URL line, save and test
     * https://medium.com/@antonyharfield/dialogflow-web-hooks-how-to-develop-locally-and-deploy-to-cloud-functions-48839919e998
