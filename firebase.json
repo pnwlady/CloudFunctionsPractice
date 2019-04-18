@@ -1,1 +1,5 @@
-{ "functions": { "source": ".", "predeploy": ["npm run"] } }
+{ "functions": { 
+    "source": ".", 
+    "predeploy": ["npm run"] 
+    } 
+}
