@@ -1,24 +1,31 @@
-const express = require('express')
-const { WebhookClient } = require('dialogflow-fulfillment')
-const app = express()
+// const express = require('express')
+// const { WebhookClient } = require('dialogflow-fulfillment')
+// const app = express()
 
-app.get('/', (req, res) => res.send('online'))
-app.post('/dialogflow', express.json(), (req, res) => {
-  const agent = new WebhookClient({ request: req, response: res })
+// app.get('/', (req, res) => res.send('online'))
+// app.post('/dialogflow', express.json(), (req, res) => {
+//   const agent = new WebhookClient({ request, response })
+//   console.log('Dialogflow Request headers: ' + JSON.stringify(request.headers))
+//   console.log('Dialogflow Request body: ' + JSON.stringify(request.body))
 
-  function welcome () {
-    agent.add('Welcome to my agent!')
-  }
+//   function welcome (agent) {
+//     agent.add('Welcome to my agent!')
+//   }
 
-  function getQuoteHandler () {
-    agent.add('Hello from quote handler')
-  }
+//   function fallback(agent) {
+//     agent.add(`Sorry, I didn't catch that.`);
+//   }
 
-  let intentMap = new Map()
-  intentMap.set('Default Welcome Intent', welcome)
-  intentMap.set('Initiate - Business Information', getQuoteHandler);
+//   function getQuoteHandler (agent) {
+//     agent.add('Hello from quote handler')
+//   }
 
-  agent.handleRequest(intentMap)
-})
+//   let intentMap = new Map()
+//   intentMap.set('Default Welcome Intent', welcome)
+//   intentMap.set('Default Fallback Intent', fallback);
+//   intentMap.set('Quote', getQuoteHandler);
 
-module.exports = app
+//   agent.handleRequest(intentMap)
+// })
+
+// module.exports = app
