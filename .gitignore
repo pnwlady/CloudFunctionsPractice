@@ -1,6 +1,7 @@
 node_modules
 
 .DS_Storesendgrid.env
+.vscode/
 
 sendgrid.env
 app.yaml
